@@ -1,0 +1,42 @@
+
+@media only screen and (max-width: 500px){
+    .subList button{
+        margin-right: 10px;
+        font-size: 13px;
+    }
+  
+}
+
+@media only screen and (max-width: 350px){
+    .subList button{
+        margin-right: 5px;
+        font-size: 9px;
+    }
+    #playBtn, #listBtn{
+        padding: 2px 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+  
+    #home h1{
+        font-size: 25px;
+    }
+    #home p{
+        font-size: 13px;
+    }
+    #home h3{
+        font-size: 15px;
+        margin-top: 30px;
+    }
+    #home h3 span{
+        font-size: 18px;
+    }
+  
+}
+@media only screen and (max-width: 250px){
+    .subList button{
+        margin-right: 5px;
+        font-size: 8px;
+    }
+  
+}

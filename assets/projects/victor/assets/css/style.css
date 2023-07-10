@@ -1,0 +1,299 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    list-style: none;
+    box-sizing: border-box;
+    transition: .4s;
+    font-family: "Yu Gothic Light";
+}
+
+/* *************************************  SCROLL BAR   **************************************** */
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(black,white);
+    cursor: pointer;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(white, black);
+    cursor: pointer;
+}
+
+/* *************************************  NAVBAR   **************************************** */
+
+
+#navbar{
+    width: 100%;
+    z-index: 333;
+    position: fixed;
+    background-color: black;
+}
+.navbar-brand img{
+    height: 40px;
+    width: 100px;
+}
+#navbarNavAltMarkup{
+    margin-left: 10%;
+}
+#navbarNavAltMarkup a{
+    color: #c6c9c8;
+    margin-left: 20px;
+}
+#navbarNavAltMarkup a:hover{
+    color: rgb(204, 101, 27);
+    font-weight: bold;
+}
+#nav-btn{
+    border: 1px solid rgb(216, 104, 24);
+    outline: none;
+    box-shadow: none;
+    color: rgb(204, 101, 27);
+}
+#nav-links{
+    margin-left: 40%;
+}
+
+/* *************************************  HOME   **************************************** */
+
+#home{
+    height: 100vh;
+    width: 100%;
+    background: url(../images/bbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home button{
+    padding: 5px 20px;
+    margin: 10px;
+    border: 2px solid #c6c9c8;
+    color: #c6c9c8;
+    outline: none;
+    background: rgba(0, 0, 0, 0.644);
+    font-weight: bold;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: .4s;
+    cursor: pointer;
+}
+#home #checkavailability::before{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background: rgb(133, 65, 17);
+    margin: -5px -20px;
+    height: 100%;
+    width: 0; 
+    z-index: -1;
+    transition: .4s;
+    
+}
+#home #checkavailability:hover#checkavailability::before{
+    width: 100%; 
+    
+}
+#home #contactus::before{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background: rgb(133, 65, 17);
+    margin: -5px -20px;
+    height: 100%;
+    width: 0; 
+    z-index: -1;
+    transition: .4s;
+    
+}
+#home #contactus:hover#contactus::before{
+    width: 100%; 
+    
+}
+
+/* *************************************  ABOUT   **************************************** */
+#line{
+    height: 1px;
+    width: 40px;
+    background:rgb(133, 65, 17); 
+}
+#about{
+    background: white;
+}
+#about #openhourscontainer{
+    background:rgb(133, 65, 17); 
+    padding: 50px 0;
+    color: #c6c9c8;
+    position: relative;
+    z-index: 1;
+}
+#about #openhourscontainer::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:rgba(133, 65, 17, 0.61);
+    left: 20px;
+    top: -20px;
+    z-index: -1;
+}
+#about #openhourscontainer h2{
+    color: white;
+}
+#aboutcontent h2{
+    color: rgb(133, 65, 17);
+}
+
+
+/* *************************************  SERVICES   **************************************** */
+
+#services h2{
+    color: rgb(133, 65, 17);
+}
+#serv-img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+#serv-img::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(26, 17, 9, 0.616);
+    top: 0;
+    left: 0;
+    display: inline-block;
+}
+#serv-img::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(../images/victor.JPG);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    z-index: -1;
+    filter: blur(3px);
+}
+#serv-img img{
+    height: 90%;
+    width: 90%;
+}
+#myservices{
+    background: #eceeed;
+}
+#row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#serv-descr{
+    text-align: center;
+}
+#serv-descr li{
+    padding: 10px 20px;
+    width: 100%;
+    background: rgb(49, 24, 6);
+    color: #c6c9c8;
+    position: relative;
+    margin: 10px;
+    z-index: 1;
+}
+#serv-descr li::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(133, 65, 17);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    transform: translate(5px, 5px) rotate(5deg);
+    display: inline-block;
+    z-index: -1;
+}
+
+/* *************************************  HAPPY CLIENTS   **************************************** */
+
+#happyclients{
+    background: url(../images/trimmers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+#happyclients .col-md-3{
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+#happyclients .col-md-3 img{
+    object-fit: cover;
+}
+#happyclients .col-md-3 img:hover{
+    transform: scale(1.5,1.5);
+    object-position: center;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+#clients{
+    height: 50vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+#clients img{
+    height: 100%;
+    width: 100%;
+}
+
+/* *************************************  MAPS   **************************************** */
+
+.maps-container{
+    height: 50vh;
+    width: 100%;
+    margin-bottom: 100vh;
+}
+
+/* *************************************  FOOTER   **************************************** */
+
+#footer{
+    background: url(../images/bggg.jpg);
+    color: #c6c9c8;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+}
+
+#last{
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    color: rgb(99, 98, 98);
+}

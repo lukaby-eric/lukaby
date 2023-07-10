@@ -1,0 +1,16 @@
+
+@media only screen and (max-width: 600px){
+   
+    #about #openhourscontainer::before{
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 350px){
+   
+  
+}
+@media only screen and (max-width: 250px){
+    
+  
+}
