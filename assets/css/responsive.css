@@ -104,6 +104,10 @@
         background-attachment:scroll;
         padding: 20px 0;
     }
+    #about #random-facts{
+        background-attachment:scroll;
+        background-position: bottom;
+    }
    
    
 }
